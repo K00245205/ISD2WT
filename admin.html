@@ -1,0 +1,238 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Lockdown Gaming</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style/Style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+	<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+<script src="script/slide.js"> </script>
+<script>          function myFunction(){
+	
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+					</script>
+</head>
+
+<body>
+
+<div id="mainWrapper">
+
+	<header>
+   <div class="header-content"> 
+
+		<a href="index.html"><img id="logo" src="images/logo.png"  alt="Lockdown gaming Logo"/></a>
+  
+
+		<nav class="nav-bar">
+			<ul>
+		<li><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> HOME</a></li>
+		<a id="myLinks">
+		<li><a href="calculateBmi.html"><i class="fa fa-calculator" aria-hidden="true"></i> CALCULATE BMI</a></li>
+		<li><a href="login.html"><i class="fas fa-sign-in-alt"></i> LOGIN/REGISTER</a></li>
+		<li><a href="motivation.html"><i class="fas fa-lightbulb"></i> MOTIVATION</a></li>
+		</a>
+		<li><a href="#">Search<input type="search" width="10px" placeholder="Enter here to search ... "><i class="fa fa-search" aria-hidden="true"></i></a></li>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+</ul>	
+</nav>
+</div>
+
+  </header>
+  <main>
+	<div class="admin-info">
+	<h1>Admin Panel</h1>
+	<h2>Please select from the options bellow what you wish to do</h2>
+	</div>
+	<article class="adminOne">
+		<a href="#" class="option"><img src="images/addProduct.png" alt="add product button"></a>
+		
+			
+
+		<a href="#" class="optionTwo"><img src="images/updateProduct.png" alt="update product button"></a>
+		
+		
+	
+
+	
+		<a href="#" class="optionThree"><img src="images/deleteProduct.png" alt="delete product button"></a>
+		
+			
+			
+		
+		</article>
+
+		<div class="admin-content">
+			<div class="hiddenContent">
+			
+				<div class="bmiBox">
+        <form>
+            <h1>Add Product</h1>
+
+            <label for="pName">Product Name:</label>
+            <input type="text" id="pName" name="pName" placeholder="Product Name"><br>
+            <span id="pNameError"></span><br>
+
+            <label for="pDescription">Product Description</label>
+            <input type="text" id="pDescription" name="pDescription" placeholder="Product Description">
+			<br><span id="productDescError"></span><br>
+			
+			<label for="quantity">Quantity :</label>
+                <input type="text" id="quantity" name="quantity" placeholder="Quantity">
+               <br> <span id="quantityError"></span><br>
+			   <!--
+            <label for="price">Price :</label>
+                <input type="text" id="price" name="price" placeholder="Price">
+                <br> <span id="priceError"></span>   -->
+
+                    <br><button class="product" value="Add Product" id="addProduct">Add Product 
+            
+            
+            
+				</div>
+
+			</div>
+			<div class="hiddenContentTwo">
+			
+				<div class="bmiBox">
+        <form>
+            <h1>Update Product</h1>
+
+			<label for="updatePName">Enter Product Name:</label>
+            <input type="text" id="updatePName" name="upName" placeholder="Product Name"><br>
+            <span id="updateProductName"></span><br>
+			
+			<label for="upName">Updated Product Name:</label>
+            <input type="text" id="upName" name="pName" placeholder="Product Name"><br>
+            <span id="pNameErrorUp"></span><br>
+
+            <label for="upDescription">Updated Product Description</label>
+            <input type="text" id="upDescription" name="pDescription" placeholder="Product Description">
+			<br><span id="productDescErrorUp"></span><br>
+			
+			<label for="uquantity">Updated Quantity :</label>
+                <input type="text" id="uquantity" name="quantity" placeholder="Quantity">
+               <br> <span id="quantityErrorUp"></span><br>
+			   <!--
+            <label for="price">Price :</label>
+                <input type="text" id="price" name="price" placeholder="Price">
+                <br> <span id="priceErrorUp"></span>   -->
+
+                    <br><button class="product" value="Update Product" id="updateProduct">Update Product 
+            
+            
+            
+				</div>
+
+			</div>
+
+			<div class="hiddenContentThree">
+
+				<div class="bmiBox">
+        <form>
+            <h1>Delete Product</h1>
+
+			<label for="deletePName">Enter Product Name</label>
+            <input type="text" id="deletePName" name="upName" placeholder="Product Name"><br>
+            <span id="dupdateProductName"></span><br>
+
+            <label for="upDescription">Product Description</label>
+            <input type="text" id="dDescription" name="pDescription" placeholder="Product Description">
+			<br><span id="dproductDescErrorUp"></span><br>
+			
+			<label for="uquantity">Quantity :</label>
+                <input type="text" id="dquantity" name="quantity" placeholder="Quantity">
+               <br> <span id="dquantityErrorUp"></span><br>
+			   <!--
+            <label for="price">Price :</label>
+                <input type="text" id="price" name="price" placeholder="Price">
+                <br> <span id="dpriceErrorUp"></span>   -->
+
+                    <br><button class="delete" value="Delete Product" id="deleteProduct">Delete Product 
+            
+            
+            
+				</div>
+			</div>
+			</div>
+ </main>
+
+ <footer>
+
+<article class="foot1">
+	
+		<ul class="footerUL">
+		<li><h3>Useful Links</h3></li>
+		
+		<li><a href="motivation.html"> Motivation </a></li>
+		<li><a href="calculateBmi.html"> BMI CALCULATOR </a></li>
+	</ul>
+</article>
+	<article class="foot2">
+	
+		<ul class="footerUL">
+		<li><h3>Navigation</h3>
+	
+		<li><a href="motivation.html"> Motivation </a></li>
+		<li><a href="calculateBmi.html"> BMI CALCULATOR </a></li>
+		<li><a href="admin.html">Adminstration</a></li>
+	</ul>
+
+</article>
+
+<article class="foot3">
+	
+		<ul class="footerUL">
+		<li><h3>Contact Us</h3></li>
+		<li> healtylife@health.ie</li>
+		<li>Phone No: 189022222</li>
+
+	</ul>
+</article>
+
+	<article class="copywrite-time">
+	
+	<ul class="footerUL">
+	<li><h3>Created by Dylan Hayes - K00245205</h3></li>
+	<li><p>&copy; Healthy Life</p></li>
+	<li>Todays Date <span id="date"></span></li>  <!-- We will insert the time into this element. -->
+	<li>Todays Time <span id="clock"></span></li>
+	</ul>
+</article>
+<script>
+	function displayTime() {
+    let clock = document.querySelector("#clock"); // Get element with id="clock"
+    let now = new Date();                         // Get current time
+    clock.textContent = now.toLocaleTimeString(); // Display time in the clock
+}
+
+
+function displayDate(){
+	let date = document.querySelector("#date");
+	let now = new Date();
+	date.textContent = now.toLocaleDateString();
+}
+displayTime();
+setInterval(displayTime, 1000);  // And then update it every second. 
+displayDate();  // And then update it every second. 
+
+
+</script>
+
+	
+  </footer>
+
+	</div>
+
+
+  </body>
+    
+</html>
