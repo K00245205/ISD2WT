@@ -48,25 +48,28 @@
 
   </header>
   <main>
-    
-        <div class="bmiBox">
-        <h1>Bmi Calculator</h1> 
-         
-	<label for="weight">Enter Weight :
-		<input type="text" id="weight" placeholder="Enter your weight here in kg">
-	</label><br>
-	<label for="height"><br>
-	 Enter Height :
-		<input type="text" id="height" placeholder="Enter height in m. eg 1.15">
-	</label>
-	<br>
-	<input type="button" id="bmiConfirm" value="Confirm">
-	<br>
-	<span id="result">Result</span>
-	<script src="script/bmi.js"> </script>
-        </div>
-  </main>
-  <footer>
+    <div class="bmiBox">
+        <form >
+  <h1>Login</h1>
+ 
+            <label for="email">Email: <i class="fas fa-envelope"> </i> </label>
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            <span id="emailError"></span>
+            <div id="pwdWrap">
+			<label for="password"> Password <i class="fas fa-lock"></i></label>
+			
+					
+						<input type="password" id="password" name="password" required placeholder="Password"><br>
+                        <span id="passwordError"></span>
+                    </div>
+                    <a href="register.html" class="notmember">Not a member? Register</a><br>
+                    <input type="submit" value="Login" id="login">
+			</form>
+			
+</div>
+</main>
+
+<footer>
 
 <article class="foot1">
 	
@@ -127,7 +130,7 @@ displayDate();  // And then update it every second.
 
 
 </script>
-<script src="script/bmi.js"></script>
+
 	
   </footer>
 

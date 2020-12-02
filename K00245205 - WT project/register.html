@@ -48,25 +48,45 @@
 
   </header>
   <main>
-    
-        <div class="bmiBox">
-        <h1>Bmi Calculator</h1> 
-         
-	<label for="weight">Enter Weight :
-		<input type="text" id="weight" placeholder="Enter your weight here in kg">
-	</label><br>
-	<label for="height"><br>
-	 Enter Height :
-		<input type="text" id="height" placeholder="Enter height in m. eg 1.15">
-	</label>
-	<br>
-	<input type="button" id="bmiConfirm" value="Confirm">
-	<br>
-	<span id="result">Result</span>
-	<script src="script/bmi.js"> </script>
-        </div>
-  </main>
-  <footer>
+    <div class="bmiBox">
+        <form >
+            <h1>Register</h1>
+
+            <label for="fName">First Name:</label>
+            <input type="text" id="fName" name="fName" placeholder="First Name"><br>
+            <span id="fNameError"></span><br>
+
+            <label for="lName">Last Name:</label>
+            <input type="text" id="lName" name="lName" placeholder="Last Name">
+            <br><span id="lNameError"></span><br>
+
+            <label for="email">Email: <i class="fas fa-envelope"> </i> </label>
+            <input type="text" id="email" name="email" placeholder="Email"><br>
+            <span id="emailError"></span>
+
+            <div id="pwdWrap">
+            <label for="password"> Password <i class="fas fa-lock"></i></label>
+						<input type="password" id="password" name="password" required placeholder="Password"><br>
+                        <br><span id="passwordError"></span><br>
+                    </div>
+            
+            <label for="address1">Address 1:</label>
+                <input type="text" id="address1" name="address1" placeholder="Address 1">
+               <br> <span id="addressOneError"></span><br>
+            
+            <label for="address2">Address 2:</label>
+                <input type="text" id="address2" name="address2" placeholder="Address 2">
+                <br> <span id="addressTwoError"></span>   
+
+                    <br><input type="submit" value="Login" id="login">
+            
+            
+        </form>     
+</div>
+
+</main>
+
+<footer>
 
 <article class="foot1">
 	
@@ -127,7 +147,7 @@ displayDate();  // And then update it every second.
 
 
 </script>
-<script src="script/bmi.js"></script>
+
 	
   </footer>
 
